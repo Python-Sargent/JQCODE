@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./JQClogo.png">
+<meta charset = "utf-8">
+<title>JQCode.net CSS</title>
+<script src="./jquery-3.6.0.min.js"></script>
+<link id="stl" rel="stylesheet" href="styles.css">
+<script>
+var plusmin = 1;
+
+$(document).ready(function() {
+  // when click on the element with id="idd"
+  $('#idd').click(function(){
+    plusmin *= -1;        // change the polarity of "plusmin" var
+    var stl = plusmin>0 ? 'styles.css' : 'styles2.css';     // sets the css file, according to plusmin
+
+    // change the css file of the tag with id="stl" and rel="stylesheet"
+    $('#stl[rel=stylesheet]').attr('href', stl);
+  });
+});
+</script>
+</head>
+<body>
+
+<nav>
+  <ul>
+   <li>&lt;JQCode examples="and"&gt;Tutorials&lt;/JQCode&gt;</li>
+   <li><a href="./index.html">Home</a></li>
+   <li><a>About</a></li>
+   <li class="dropdown">
+    <a class="active dropbtn">Examples and Tutorials <span style="font-size: 16px;"> &#8897;</span></a>
+     <div class="dropdown-content">
+      <a href="./exhtml.html">HTML</a>
+      <a href="./exjs.html">JavaScript</a>
+      <a href="./excss.html">CSS</a>
+      <a href="./exjq.html">Jquery</a>
+      <a href="./expy.html">Python</a>
+     </div>
+   </li>
+  </ul>
+</nav>
+
+<header></header>
+
+
+<aside>
+ <div>
+  <p></p>
+  <a id="idd">&#127763; Theme</a>
+ </div>
+</aside>
+
+<section>
+	<h1>JQCode.net</h1>
+ <h3>Introduction to CSS:</h3>
+	<p></p>
+ <div>
+		<p>CSS is used to change the way elements on a webpage look:</p>
+		<div class="codep">
+			<p><span class="tag">p</span> {<br>
+   <span class="atr">color</span>: <span class="val">red</span>;<br>
+   }</p>
+		</div>
+  <p>This would make all the paragraphs red:</p>
+  <h3>This is a size 3 heading</h3>
+  <p style="color: red;">This is a paragraph<p>
+  <p style="color: red;">This is a paragraph<p>
+  <a href="">This is a link</a>
+  <h4>This is a size 4 heading</h4>
+ </div>
+</section>
+
+<section>
+ <p></p>
+ <div>
+  <p>If at any time you would like to try the code on this site you can use <a href="https://www.onlinegdb.com/" target="blank">GDB Debugger</a> or <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="blank">W3Schools Tryit Editor</a> or use a text editor. To do that make a new file called 'index.html' and open with your text editor (don't double click, it will open the HTML file in your browser)</p>
+ </div>
+</section>
+
+<section>
+ <p></p>
+ <div>
+  <h3>CSS Syntax Basics</h3>
+  <p>CSS is a easy language to learn but you need to remember a few important things:</p>
+  <p>To start using CSS you first need to know how it works.<br>
+  CSS uses a system of:</p>
+  <p><i class="tag">selector</i> {<br>
+  &nbsp;&nbsp;<i class="atr">attribute</i>: <i class="val">value</i>;<br>
+  }</p>
+  <p>Lets turn that into real code</p>
+  <div class="codep">
+			<p><span class="tag">p</span>{<span class="atr">color</span>: <span class="val">red</span>;}</p>
+		</div>
+  <p>Lets change some more attributes:</p>
+  <div class="codep">
+			<p><span class="tag">p</span> {<br>
+   &nbsp;&nbsp;<span class="atr">color</span>: <span class="val">red</span>;<br>
+   &nbsp;&nbsp;<span class="atr">background-color:</span> <span class="val">blue</span>;<br>
+   &nbsp;&nbsp;<span class="atr">padding:</span> <span class="val">5px</span>;<br>
+   &nbsp;&nbsp;<span class="atr">border-radius:</span> <span class="val">15px</span>;<br>
+   &nbsp;&nbsp;<span class="atr">font-size:</span> <span class="val">20px</span>;<br>
+   }</p>
+		</div>
+  <p>To see it in action use one the editors above or go <a href="./cex1.html">Here</a></p>
+ </div>
+</section>
+
+<footer>
+<p>Copyright 2022 Samuel Sargent, Owner and Developer</p>
+</footer>
+
+</body>
+</html>

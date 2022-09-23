@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./JQClogo.png">
+<meta charset = "utf-8">
+<title>JQCode.net</title>
+<script src="./jquery-3.6.0.min.js"></script>
+<link id="stl" rel="stylesheet" href="styles.css">
+<script>
+var plusmin = 1;
+
+$(document).ready(function() {
+  // when click on the element with id="idd"
+  $('#idd').click(function(){
+    plusmin *= -1;        // change the polarity of "plusmin" var
+    var stl = plusmin>0 ? 'styles.css' : 'styles2.css';     // sets the css file, according to plusmin
+
+    // change the css file of the tag with id="stl" and rel="stylesheet"
+    $('#stl[rel=stylesheet]').attr('href', stl);
+  });
+});
+</script>
+</head>
+<body>
+
+<nav>
+  <ul>
+   <li>&lt;JQCode examples="and"&gt;Tutorials&lt;/JQCode&gt;</li>
+   <li><a class="active" href="./index.html">Home</a></li>
+   <li><a>About</a></li>
+   <li class="dropdown">
+    <a class="dropbtn">Examples and Tutorials <span style="font-size: 16px;">&#8897;</span></a>
+     <div class="dropdown-content">
+      <a href="./exhtml.html">HTML</a>
+      <a href="">JavaScript</a>
+      <a href="">CSS</a>
+      <a href="">Jquery</a>
+      <a href="">Python</a>
+     </div>
+   </li>
+  </ul>
+</nav>
+
+<header></header>
+
+
+<aside>
+ <div>
+  <p></p>
+  <a id="idd">&#127763; Theme</a>
+ </div>
+</aside>
+
+<section>
+	<h1>JQCode.net</h1>
+ <h3>List of Tags and Properties:</h3>
+	<p></p>
+ <div>
+ <p>This is a table of tags and some of their properties:</p>
+ <table>
+    <tr>
+     <th>TAG</th>
+     <th>KIND</th>
+     <th>SYNTAX</th>
+     <th>WHERE</th>
+    </tr>
+    <tr>
+     <td>&lt;p&gt;</td>
+     <td>Paragraph</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;a&gt;</td>
+     <td>Link</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;i&gt;</td>
+     <td>Italicised</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;b&gt;</td>
+     <td>Bold</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;div&gt;</td>
+     <td>Divided Area</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;img&gt;</td>
+     <td>Image</td>
+     <td>Start</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;hr&gt;</td>
+     <td>Horizontal Rule</td>
+     <td>Start</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;button&gt;</td>
+     <td>Button</td>
+     <td>Start-End</td>
+     <td>body</td>
+    </tr>
+    <tr>
+     <td>&lt;style&gt;</td>
+     <td>internal CSS styles</td>
+     <td>Start-End</td>
+     <td>head</td>
+    </tr>
+    <tr>
+     <td>&lt;script&gt;</td>
+     <td>internal script</td>
+     <td>Start-End</td>
+     <td>head/body</td>
+    </tr>
+    <tr>
+     <td>&lt;link&gt;</td>
+     <td>link to external files</td>
+     <td>Start-End</td>
+     <td>head</td>
+    </tr>
+    <tr>
+     <td>&lt;title&gt;</td>
+     <td>set the page title</td>
+     <td>Start-End</td>
+     <td>head</td>
+    </tr>
+    <tr>
+     <td>&lt;meta&gt;</td>
+     <td>set meta data</td>
+     <td>Start-End</td>
+     <td>head</td>
+    </tr>
+   </table>
+ </div>
+</section>
+
+<footer>
+<p>Copyright 2022 Samuel Sargent, Owner and Developer</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./JQClogo.png">
+<meta charset = "utf-8">
+<title>JQCode.net</title>
+<script src="./jquery-3.6.0.min.js"></script>
+<link id="stl" rel="stylesheet" href="styles.css">
+<script>
+var plusmin = 1;
+
+$(document).ready(function() {
+  // when click on the element with id="idd"
+  $('#idd').click(function(){
+    plusmin *= -1;        // change the polarity of "plusmin" var
+    var stl = plusmin>0 ? 'styles.css' : 'styles2.css';     // sets the css file, according to plusmin
+
+    // change the css file of the tag with id="stl" and rel="stylesheet"
+    $('#stl[rel=stylesheet]').attr('href', stl);
+  });
+});
+</script>
+</head>
+<body>
+
+<nav>
+  <ul>
+   <li>&lt;JQCode examples="and"&gt;Tutorials&lt;/JQCode&gt;</li>
+   <li><a class="active" href="./index.html">Home</a></li>
+   <li><a>About</a></li>
+   <li class="dropdown">
+    <a class="dropbtn">Examples and Tutorials <span style="font-size: 16px;">&#8897;</span></a>
+     <div class="dropdown-content">
+      <a href="./exhtml.html">HTML</a>
+      <a href="./exjs.html">JavaScript</a>
+      <a href="./excss.html">CSS</a>
+      <a href="./exjq.html">Jquery</a>
+      <a href="./expy.html">Python</a>
+     </div>
+   </li>
+  </ul>
+</nav>
+
+<header></header>
+
+
+<aside>
+ <div>
+  <p></p>
+  <a id="idd">&#127763; Theme</a>
+ </div>
+</aside>
+
+<section>
+	<h1>JQCode.net</h1>
+ <h3>Introduction to JQCode:</h3>
+	<p></p>
+ <div>
+		<p>See code clearly:</p>
+		<div class="codep">
+			<p><span class="tag">var</span> number = <span class="val">1234</span>;<br>
+			document.getElementById(<span class="val">"p1"</span>).textContent = number;</p>
+		</div>
+ </div>
+ <p></p>
+	<div>
+  <p>Learn more about code:</p>
+  <div>
+			Javascript is used to perform actions after the page has loaded.<br>
+			HTML is vital to all web developers of any sort.<br>
+			CSS is the best way to make your page look good.<br>
+			Jquery is the easiest way to script webpages.</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <h3>Final Word:</h3>
+ <p>JQCode.net is not only a way to learn code it is a way to express code,<br>
+ what I mean by that is that I get to put my thoughts into some form of readable material,<br>
+ but that also means that this site is a learning process for you <i>and</i> me.</p>
+ <p>But above all:<br>
+ <h4>Have Fun, Learn Code!</h4></p>
+</section>
+
+<footer>
+<p>Copyright 2022 Samuel Sargent, Owner and Developer</p>
+</footer>
+
+</body>
+</html>
