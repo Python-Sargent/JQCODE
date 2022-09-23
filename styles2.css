@@ -144,6 +144,8 @@ div.codep {
 
 .dropdown:hover .dropbtn {background-color: #112;}
 
+.name {color: #ffff55;}
+
 footer {
   position: relative;
   text-align: center;

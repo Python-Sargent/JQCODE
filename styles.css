@@ -144,6 +144,8 @@ html,body { height:100%; }
 
 .dropdown:hover .dropbtn {background-color: #112;}
 
+.name {color: #ffff55;}
+
 footer {
   position: relative;
   text-align: center;
