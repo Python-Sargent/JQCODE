@@ -7,20 +7,7 @@
 <title>JQCode.net</title>
 <script src="./jquery-3.6.0.min.js"></script>
 <link id="stl" rel="stylesheet" href="styles.css">
-<script>
-var plusmin = 1;
-
-$(document).ready(function() {
-  // when click on the element with id="idd"
-  $('#idd').click(function(){
-    plusmin *= -1;        // change the polarity of "plusmin" var
-    var stl = plusmin>0 ? 'styles.css' : 'styles2.css';     // sets the css file, according to plusmin
-
-    // change the css file of the tag with id="stl" and rel="stylesheet"
-    $('#stl[rel=stylesheet]').attr('href', stl);
-  });
-});
-</script>
+<script src="./script.js"></script>
 </head>
 <body>
 
