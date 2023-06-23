@@ -3,7 +3,7 @@ body {
 	color: white;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ ul {
   background-color: #123;
 }
 
-li {
+nav ul li {
   float: left;
   display: block;
   color: white;
@@ -20,7 +20,7 @@ li {
   text-decoration: none;
 }
 
-li a {
+nav ul li a {
   display: block;
   color: white;
   padding: 16px;
@@ -29,7 +29,7 @@ li a {
   position: relative;
 }
 
-li a:hover {
+nav ul li a:hover {
   background-color: #112;
 }
 
@@ -77,25 +77,25 @@ aside div a:hover {
 div {
   border: solid 1px grey;
   padding: 5px;
-		background-color: #001;
+  background-color: #112;
 }
 
 div.code {
   border: solid 1px grey;
   padding: 5px;
-		background-color: #011;
-		color: #fdd;
+  background-color: #123;
+  color: #fdd;
 }
 
 div.codep {
-		border: none;
-  border-left: solid 5px #223;
-		background-color: #112;
-		color: #fdd;
+  border: none;
+  border-left: solid 5px #001;
+  background-color: #223;
+  color: #fdd;
 }
 
 .tag {
-		color: blue;
+		color: #56c;
 }
 
 .atr {
@@ -103,7 +103,7 @@ div.codep {
 }
 
 .val {
-  color: gold;
+  color: #f40;
 }
 
 /* Dropdown Button */
