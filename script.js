@@ -3,6 +3,9 @@ var plusmin = 1;
 $(document).ready(function() {
   // when click on the element with id="idd"
   var stl = localStorage.getItem("color-mode");
+  if (stl != "styles.css" && stl != "styles2.css") {
+	localStorage.setItem("color-mode", "styles.css");
+  }
   $('#stl[rel=stylesheet]').attr('href', stl);
 
   $('#idd').click(function(){
@@ -14,3 +17,5 @@ $(document).ready(function() {
 	localStorage.setItem("color-mode", stl);
   });
 });
+
+//&lt;JQCode examples="and"&gt;Tutorials&lt;/JQCode&gt;

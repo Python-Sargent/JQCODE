@@ -42,12 +42,12 @@ aside div {
   border: none;
   float: right;
   text-align: right;
-		border-left: solid 1px lightgrey;
+  border-left: solid 1px lightgrey;
   padding: 15px;
-		padding-bottom: 1000px;
-		background-color: #dde;
-		min-height: 100%;
-		height: 100%;
+  padding-bottom: 1000px;
+  background-color: #dde;
+  min-height: 100%;
+  height: 100%;
 }
 
 aside div a {
@@ -58,8 +58,9 @@ aside div a {
 }
 
 aside div a:hover {
-		background-color: #788;
+  background-color: #788;
   color: black;
+  cursor: pointer;
 }
 
 .active {

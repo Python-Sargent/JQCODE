@@ -1,6 +1,13 @@
 body {
-	background-color: #001;
+	background-color: #14192f;
 	color: white;
+	font-family: auto;
+}
+
+.logo_image {
+	padding: 8;
+	padding-top: 8px;
+	margin-top: 1px;
 }
 
 nav ul {
@@ -8,7 +15,8 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #123;
+  background-color: #001;
+  max-height: 100%;
 }
 
 nav ul li {
@@ -16,21 +24,27 @@ nav ul li {
   display: block;
   color: white;
   padding: 16px;
-  font-size: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 24px;
   text-decoration: none;
+  min-height: 100%;
 }
 
 nav ul li a {
   display: block;
   color: white;
   padding: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 72px;
   position: relative;
+  min-height: 100%;
 }
 
 nav ul li a:hover {
-  background-color: #112;
+  background-color: #212124;
 }
 
 aside {
@@ -42,23 +56,25 @@ aside div {
   border: none;
   float: right;
   text-align: right;
-		border-left: solid 1px #112;
+  border-left: solid 2px #223;
+  border-bottom: solid 2px #223;
   padding: 15px;
-		padding-bottom: 500px;
-		background-color: #001;
-		min-height: 100%;
-		height: 100%;
+  padding-bottom: 500px;
+  background-color: #14192f;
+  min-height: 100%;
+  height: 100%;
 }
 
 aside div a {
   border-radius: 5px;
-		background-color: #344;
+  background-color: #344;
   color: white;
   padding: 10px;
+  cursor: pointer;
 }
 
 aside div a:hover {
-		background-color: #233;
+  background-color: #233;
   color: white;
 }
 
@@ -77,21 +93,21 @@ aside div a:hover {
 div {
   border: solid 1px grey;
   padding: 5px;
-  background-color: #112;
+  background-color: #21232f;
 }
 
 div.code {
   border: solid 1px grey;
   padding: 5px;
   background-color: #123;
-  color: #fdd;
+  color: #def;
 }
 
 div.codep {
   border: none;
   border-left: solid 5px #001;
-  background-color: #223;
-  color: #fdd;
+  background-color: #25263f;
+  color: #def;
 }
 
 .tag {
@@ -122,7 +138,7 @@ div.codep {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #233;
+  background-color: #353539;
   min-width: 100%;
   box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -137,14 +153,14 @@ div.codep {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #122;}
+.dropdown-content a:hover {background-color: #303031;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #112;}
+.dropdown:hover .dropbtn {background-color: #212124;}
 
-.name {color: #ffff55;}
+.name {color: #ddeeff;}
 
 footer {
   position: relative;
