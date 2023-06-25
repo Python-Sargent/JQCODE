@@ -71,28 +71,15 @@
 <section>
  <p></p>
  <div>
-  <h3>JQuery Syntax Basics</h3>
-  <p>Jqury is a fun language to learn but you need to remember a few important things:</p>
-  <p>If you don't know JavaScript i'd advise learning that first.<br>
-  Jquery uses:<br>
+  <h3>Javascript Syntax Basics</h3>
+  <p>The main thing to remember when learning javascript is that it mainly uses functions:</p>
+  <p>Javascript functions are defined as:<br>
   <div class="codep">
-			<p>$(<i class="val">"selector"</i>).<i>action</i>();</p>
-		</div>to manipulate elements, notice the $.</p>
-  <p>lets make a script:</p>
-  <div class="codep">
-			<p>$(<span class="val">"p"</span>).hide();</p>
-		</div>
-  <p>This script will hide all the paragraphs, notice the "p".</p>
-  <p>Now lets put it to action by making it wait for the paragraph to be clicked.<br>
-  (the first part is to make it only work when the page is loaded)</p>
-  <div class="codep">
-			<p>$(document).ready(<span class="tag">function</span>(){<br>
-   &nbsp;&nbsp;$(<span class="val">"p"</span>).click(<span class="tag">function</span>(){<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;$(<span class="tag">this</span>).hide();<br>
-   &nbsp;&nbsp;});<br>
-   });</p>
-		</div>
-  <p>Don't forget to download Jquery <a href="https://jquery.com/download/">Here</a>, or link to: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'</p>
+			<p><span class="tag">function</span> myFunction(paramaters) {</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">var</span> myVariable = <span class="val">"variable_value"</span>;</p>
+			<p>}</p>
+  </div>notice the var, telling the interpreter that this is a variable value. Don't include this every time you set the variable, just the first time.</p>
+  <p>Javascript is avialable whenever you are using HTML, so you don't have to install anything.</p>
   <p>To see it in action use <a href="https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide" target="blank">one</a> of the editors above, or go <a href="./jqex1.html" target="blank">Here</a></p>
  </div>
 </section>
