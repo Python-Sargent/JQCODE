@@ -10,6 +10,17 @@ body {
 	margin-top: 1px;
 }
 
+.linklist ul {
+  list-style-type: none;
+  padding: 4px;
+}
+
+.linklist ul li {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #0a0f1f;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -29,22 +40,25 @@ nav ul li {
   font-size: 24px;
   text-decoration: none;
   min-height: 100%;
+  vertical-align: middle;
 }
 
 nav ul li a {
   display: block;
   color: white;
-  padding: 16px;
+  padding: 4px;
   padding-top: 0px;
   padding-bottom: 0px;
   text-decoration: none;
-  font-size: 72px;
+  font-size: 54px;
   position: relative;
   min-height: 100%;
+  vertical-align: middle;
 }
 
 nav ul li a:hover {
   background-color: #212124;
+  color: #eef;
 }
 
 aside {
@@ -86,9 +100,8 @@ aside div a:hover {
   background-color: #333;
   color: brown;
   padding: 2px;
+  border-radius: 2px;
 }
-
-
 
 div {
   border: solid 1px grey;
@@ -165,7 +178,7 @@ div.codep {
 footer {
   position: relative;
   text-align: center;
-  background-color: darkblue;
+  background-color: #121525;
   font-size: 10px;
   padding: 10px;
   bottom: -500px;
@@ -174,7 +187,7 @@ footer {
 
 section {
   margin-left: 50px;
-  margin-right: 120px;
+  margin-right: 160px;
 }
 
 th, td {
@@ -188,4 +201,48 @@ table {
 
 a {
  color: skyblue;
+}
+
+#progressBarUnder {
+  width: auto;
+  margin-top: 8px;
+  background-color: #111;
+}
+
+#progressBar {
+  width: 0%;
+  height: 48px;
+  font-size: 42px;
+  background-color: #242;
+  text-align: center;
+  line-height: 48x;
+  color: white;
+  padding: 0px;
+}
+
+iframe {
+	width: 100%;
+	min-height: 480px;
+	border: none;
+}
+
+.quiz_title {
+	background-color: #373;
+	padding: 24px;
+}
+
+#score {
+	font-size: 32px;
+	color: #aeb;
+	font-family: calibri;
+}
+
+#next {
+	display: none;
+	border: #242530;
+	border-radius: 8px;
+	text-decoration: none; 
+	color: white;
+	background-color: #565869;
+	padding: 8px
 }

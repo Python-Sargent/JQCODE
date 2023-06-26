@@ -19,3 +19,45 @@ $(document).ready(function() {
 });
 
 //&lt;JQCode examples="and"&gt;Tutorials&lt;/JQCode&gt;
+
+var i = 0;
+var width_now = 0
+
+function animateProgress(percentage) {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("progressBar");
+    var width = width_now;
+    var id = setInterval(frame, 18);
+    function frame() {
+      if (width >= percentage) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+function checkAnswer(quiz_option) {
+  document.getElementById("next").style.display = "inline";
+  var av = document.getElementById(quiz_option);
+  document.getElementById("option1").disabled = true;
+  document.getElementById("option2").disabled = true;
+  document.getElementById("option3").disabled = true;
+  document.getElementById("option4").disabled = true;
+  if (av.checked == true) {
+	//correct
+  } else {
+	//incorrect
+  }
+}
+
+function setProgress(percentage) {
+  document.getElementById("progressBar").style.width = percentage + "%";
+  document.getElementById("progressBar").innerHTML = percentage + "%";
+  width_now = percentage
+}

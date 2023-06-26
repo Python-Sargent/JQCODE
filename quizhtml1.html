@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./icon.png">
+<meta charset = "utf-8">
+<title>JQCode.net</title>
+<script src="./jquery-3.6.0.min.js"></script>
+<link id="stl" rel="stylesheet" href="styles.css">
+<script src="./script.js"></script>
+</head>
+<body onload="setProgress(0)">
+
+ <section>
+  <div id="progressBarUnder">
+   <div id="progressBar">0%</div>
+  </div><br>
+ 
+  <div>
+   <p>Question 1</p>
+   <form>
+    <input type="radio" id="option1">
+    <label for="option1">Answer 1</label><br>
+    <input type="radio" id="option2">
+    <label for="option2">Answer 2</label><br>
+    <input type="radio" id="option3">
+    <label for="option3">Answer 3</label><br>
+    <input type="radio" id="option4">
+    <label for="option4">Answer 4</label><br>
+	<p></p>
+    <input type="button" onclick="checkAnswer('option1'); animateProgress(5 /5 * 100)" value="Check Answer">
+   </form>
+   <br><a id="next" href="./quizhtml1.html">Next Question</a><br>
+   <p></p>
+  </div>
+ </section>
+</body>
+</html>
