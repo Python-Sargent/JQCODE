@@ -7,22 +7,30 @@ body {
   background-color: #0a0f1f;
 }
 
-nav ul {
+nav div .navbar {
   background-color: #001;
 }
 
-nav ul li {
+nav div .navlink {
   color: white;
 }
 
-nav ul li a {
-  color: white;
-}
-
-nav ul li a:hover {
-  background-color: #212124;
+nav div .navlink:hover {
+  background-color: #15161f;
   color: #eef;
 }
+
+.dropdown-content {
+  background-color: #353539;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+.dropdown-content a:hover {background-color: #303031;}
+
+.dropdown:hover .dropbtn {background-color: #212124;}
 
 aside div {
   border-left: solid 2px #223;
@@ -81,18 +89,6 @@ div.codep {
   color: white;
 }
 
-.dropdown-content {
-  background-color: #353539;
-}
-
-.dropdown-content a {
-  color: black;
-}
-
-.dropdown-content a:hover {background-color: #303031;}
-
-.dropdown:hover .dropbtn {background-color: #212124;}
-
 .name {color: #ddeeff;}
 
 footer {
@@ -109,7 +105,7 @@ table {
   border:1px solid white;
 }
 
-a {
+section a {
  color: skyblue;
 }
 
