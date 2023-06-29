@@ -3,9 +3,10 @@ var plusmin = 1;
 $(document).ready(function() {
   // when click on the element with id="idd"
   var stl = localStorage.getItem("color-mode");
-  if (stl != "styles.css" && stl != "styles2.css") {
+  if (stl == null) {
 	localStorage.setItem("color-mode", "styles.css");
   }
+  var stl = localStorage.getItem("color-mode");
   $('#stl[rel=stylesheet]').attr('href', stl);
 
   $('#idd').click(function(){

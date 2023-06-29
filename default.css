@@ -1,11 +1,15 @@
 body {
 	font-family: auto;
+	margin: 0px;
+	transition: 0.3s;
 }
 
 .logo_image {
 	padding: 8;
 	padding-top: 8px;
 	margin-top: 1px;
+	max-width: 64px;
+	max-height: 64px;
 }
 
 .linklist ul {
@@ -18,37 +22,65 @@ body {
   border-radius: 8px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav .navbar {
   overflow: hidden;
-  max-height: 100%;
+  border: none;
+  display: block;
 }
 
-nav ul li {
+nav .navlink {
   float: left;
-  display: block;
-  padding: 16px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-size: 24px;
+  font-size: 32px;
+  text-align: center;
   text-decoration: none;
-  min-height: 100%;
-  vertical-align: middle;
+  padding: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 8px;
 }
 
-nav ul li a {
+nav .navimg {
+  float: left;
+  padding: 2px;
   display: block;
-  padding: 4px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  text-decoration: none;
-  font-size: 54px;
-  position: relative;
-  min-height: 100%;
-  vertical-align: middle;
+  max-width: 64px;
+  max-height: 64px;
 }
+
+nav .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+nav .dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-decoration: none;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 100%;
+  box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 /**
 nav ul li a:hover {
@@ -96,8 +128,7 @@ aside div a:hover {
   border-radius: 2px;
 }
 
-div {
-  border: solid 1px #fff;
+section div {
   padding: 5px;
 }
 
@@ -123,33 +154,8 @@ div.codep {
   color: #f40;
 }
 
-.dropbtn {
-  border: none;
-}
-
-.dropdown {
-  position: absolute;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 100%;
-  box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
 /**
 .dropdown-content a:hover {background-color: #303031;}
-
-.dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #212124;}
 
