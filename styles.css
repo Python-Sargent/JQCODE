@@ -7,16 +7,17 @@ body {
   background-color: #1a1f25;
 }
 
-nav div .navbar {
+nav .navbar {
   background-color: #aab;
   border: none;
+  text-shadow: 2px 2px 1px #fff;
 }
 
-nav div .navlink {
+nav .navlink {
   color: #334;
 }
 
-nav div .navlink:hover {
+nav .navlink:hover {
   background-color: #889;
   color: #112;
 }

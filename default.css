@@ -1,6 +1,7 @@
 body {
 	font-family: auto;
 	margin: 0px;
+	transition: 0.3s;
 }
 
 .logo_image {
@@ -24,6 +25,7 @@ body {
 nav .navbar {
   overflow: hidden;
   border: none;
+  display: block;
 }
 
 nav .navlink {
@@ -31,8 +33,18 @@ nav .navlink {
   font-size: 32px;
   text-align: center;
   text-decoration: none;
-  padding: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  padding-left: 24px;
   border-radius: 8px;
+}
+
+nav .navimg {
+  float: left;
+  padding: 2px;
+  display: block;
+  max-width: 64px;
+  max-height: 64px;
 }
 
 nav .dropdown {
@@ -117,7 +129,6 @@ aside div a:hover {
 }
 
 section div {
-  border: solid 1px #fff;
   padding: 5px;
 }
 
