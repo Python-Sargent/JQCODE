@@ -24,10 +24,11 @@ $(document).ready(function() {
 var i = 0;
 var width_now = 0
 
-function animateProgress(percentage) {
+function animateProgress(percentage, color) {
   if (i == 0) {
     i = 1;
     var elem = document.getElementById("progressBar");
+    elem.style.backgroundColor = color;
     var width = width_now;
     var id = setInterval(frame, 18);
     function frame() {
@@ -43,17 +44,17 @@ function animateProgress(percentage) {
   }
 }
 
-function checkAnswer(quiz_option) {
+function checkAnswer(quiz_option, quiz_progress) {
   document.getElementById("next").style.display = "inline";
   var av = document.getElementById(quiz_option);
   document.getElementById("option1").disabled = true;
   document.getElementById("option2").disabled = true;
   document.getElementById("option3").disabled = true;
   document.getElementById("option4").disabled = true;
-  if (av.checked == true) {
-	//correct
+  if (av.checked == true) { //correct answer is selected
+	animateProgress(quiz_progress * 100, "green");
   } else {
-	//incorrect
+  	animateProgress(quiz_progress * 100, "red");
   }
 }
 
